@@ -1,0 +1,10 @@
+##IDE
+.vscode/
+
+# dependencies
+/node_modules
+/.yarn-cache
+
+# styles
+*.module.*.d.ts
+

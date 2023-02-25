@@ -1,0 +1,40 @@
+{
+  "name": "reactBuild",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/VnGrigoreva/reactBuild.git",
+  "author": "Виктория Григорьева <vn.grigoreva@yandex.ru>",
+  "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "css-modules-typescript-loader": "^4.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "path": "^0.12.7",
+    "postcss-loader": "^7.0.2",
+    "react-dev-utils": "^12.0.1",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "5.70.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "4.7.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
