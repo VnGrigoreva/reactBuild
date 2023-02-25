@@ -8,3 +8,7 @@
 # styles
 *.module.*.d.ts
 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
