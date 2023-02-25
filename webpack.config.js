@@ -106,6 +106,8 @@ module.exports = {
     port: PORT,
     hot: true,
     open: true,
+    historyApiFallback: true,
+    allowedHosts: 'all',
   },
   target: process.env.NODE_ENV === "development" ? ["web"] : ["browserslist"],
 };

@@ -1,10 +1,10 @@
 import React, {ReactElement} from 'react';
+import Router from './Router';
 
 import '@/styles/general.scss';
-import {Header} from '@/components';
 
 function App(): ReactElement {
-  return <Header />;
+  return <Router />;
 }
 
 export default App;
