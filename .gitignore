@@ -1,4 +1,4 @@
-##IDE
+# IDE
 .vscode/
 
 # dependencies
@@ -8,7 +8,9 @@
 # styles
 *.module.*.d.ts
 
-# OS generated files #
-######################
+# OS generated files 
 .DS_Store
 .DS_Store?
+
+# build
+/dist
