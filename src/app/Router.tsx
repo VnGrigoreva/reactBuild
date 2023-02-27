@@ -1,6 +1,5 @@
 import {Home, Error404} from '@/pages';
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -15,7 +14,7 @@ const router = createBrowserRouter([
   // },
 ]);
 
-function Router() {
+const Router = () => {
   return <RouterProvider router={router} />;
 }
 

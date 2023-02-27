@@ -1,51 +1,33 @@
-const path = require('path');
-
 module.exports = {
-  root: true,
-  extends: ['airbnb'],
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
+  },
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
   plugins: ['@typescript-eslint'],
+  rules: {
+    'no-console': ['error', {allow: ['warn', 'disableYellowBox']}],
+    'max-len': [2, 150],
+    'object-curly-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['error', 'never'],
+    'arrow-body-style': ['error', 'always'],
+    '@typescript-eslint/no-unused-vars': 'error',
+  },
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
     },
     'import/resolver': {
-      webpack: {
-        config: path.join(__dirname, './webpack.config.js'),
-      },
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
-  },
-  rules: {
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
-    'no-console': ['error', {allow: ['warn', 'info']}],
-    'object-curly-spacing': ['error', 'never'],
-    'no-param-reassign': ['error', {props: true, ignorePropertyModificationsFor: ['state']}],
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
-    'react/jsx-filename-extension': [2, {extensions: ['.js', '.jsx', '.ts', '.tsx']}],
-    'react/jsx-props-no-spreading': 0,
-    'react/prop-types': 0,
-    'max-len': ['error', {code: 120, tabWidth: 2}],
-    'react/require-default-props': 0,
-    camelcase: 0,
-    'class-methods-use-this': 1,
-    '@typescript-eslint/no-unused-vars': 1,
-    'import/prefer-default-export': 0,
-    'comma-dangle': ['error', 'only-multiline'],
-  },
-  env: {
-    browser: true,
   },
 };

@@ -3,7 +3,7 @@ import Router from './Router';
 
 import '@/styles/general.scss';
 
-function App(): ReactElement {
+const App = (): ReactElement => {
   return <Router />;
 }
 

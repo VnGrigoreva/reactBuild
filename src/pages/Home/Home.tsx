@@ -1,7 +1,7 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import {Header} from '@/components';
 
-function Home(): ReactElement {
+const Home = () => {
   return <Header />;
 }
 
