@@ -1,4 +1,4 @@
-# reactBuild - простая webpack-сборка react-прилодения
+# reactBuild - простая webpack-сборка react-приложения
 
 ## Скрипты для запуска
 
