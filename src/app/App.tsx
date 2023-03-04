@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import {ReactElement} from 'react';
 import Router from './Router';
 
 import '@/styles/general.scss';
