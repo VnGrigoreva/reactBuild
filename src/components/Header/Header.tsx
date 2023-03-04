@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './header.module.scss';
 
 export type HeaderProps = {
@@ -7,7 +6,7 @@ export type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
   const {title = 'Hello word'} = props;
-  
+
   return <h1 className={styles.blue}>{title}</h1>;
 };
 
