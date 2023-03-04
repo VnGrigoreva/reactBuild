@@ -3,8 +3,6 @@ import Router from './Router';
 
 import '@/styles/general.scss';
 
-const App = (): ReactElement => {
-  return <Router />;
-}
+const App = (): ReactElement => <Router />;
 
 export default App;
