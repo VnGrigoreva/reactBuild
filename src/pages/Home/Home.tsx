@@ -1,8 +1,5 @@
-import React from 'react';
 import {Header} from '@/components';
 
-const Home = () => {
-  return <Header />;
-}
+const Home = () => <Header />;
 
 export default Home;

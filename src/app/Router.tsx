@@ -1,6 +1,6 @@
-import {Home, Error404} from '@/pages';
-import React from 'react';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+import {Home, Error404} from '@/pages';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +14,6 @@ const router = createBrowserRouter([
   // },
 ]);
 
-const Router = () => {
-  return <RouterProvider router={router} />;
-}
+const Router = () => <RouterProvider router={router} />;
 
 export default Router;
